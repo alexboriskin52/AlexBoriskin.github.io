@@ -1,33 +1,79 @@
+html
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 147px;
+}
+
+.page-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 147px;
+    background-color: rgba(222, 222, 222, 0.5);
+    backdrop-filter: blur(20px);
+}
+
+.page-header_container {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1414px;
+    width: 100%;
+}
+
+.main {
+    flex: 1 0 auto;
+    background-color: aquamarine;
+}
+
+.page-footer {
+    flex: 0 0 auto;
+    background-color: blueviolet;
+}
+
 h1 {
     position: relative;
     color: red !important;
-    }
-    
-    h1::after {
+}
+
+h1::after {
     content: 'ПОСЛЕ';
-    }
-    
-    h1::before {
+}
+
+h1::before {
     content: 'ДО';
-    }
-    
-    h1::first-letter {
+}
+
+h1::first-letter {
     color: blue;
-    }
-    
-    p::first-line {
+}
+
+p::first-line {
     color: red;
-    }
-    
-    #title {
+}
+
+#title {
     font-size: 50px;
-    }
-    
-    .page-title {
+}
+
+.page-title {
     font-size: 20px;
-    }
-    
-    .page-title,
-    #title {
+}
+
+.page-title,
+#title {
     border: 1px solid green;
-    }
+}
